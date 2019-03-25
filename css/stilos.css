@@ -1,1 +1,13 @@
-h4 {color: pink;}
+h1 {background-color: grey; color: white;font-family:courier new,cuorier,monospace;font-size: 24px;}
+ p1  {background-color: green;font-family: monospace;}
+h2 {border-color:orange;border-style: solid;font-family: monospace;}
+li {color: red; font-family: monospace;}
+li li {color: green; font-family: monospace;}
+p2 {font-family: monospace;}
+h3 {color:white; background-color: blue;font-family: monospace;}
+h4 {background-color: pink;font-family: monospace;}
+	p {font-family: monospace;}
+	
+h5 {border-color: orange;border-style: solid;font-family: monospace;}
+	p {font-family: monospace;}
+		p {font-family: monospace;}
