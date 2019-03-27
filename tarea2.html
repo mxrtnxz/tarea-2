@@ -12,42 +12,87 @@
 </head>
 <body>
 
-<h1 id="titulo"> CSS: sintaxis y lectores </h1>
-	<hr>
+	<h1>HOJA DE INSCRIPCION</h1>
+	<h1>EN LOS CICLOS FORMATIVOS DE GRADO SUPERIOR</h1>
+<form action="#" method="POST">
+	<fieldset id="fondo1" title="primera parte del formulario con el fondo silver que indica los datos personales">
+		<legend>Datos personales</legend>
+			<table id="table">
+				<tr>
+					<td><label for="nombre">Nombre:</label></td>
+					<td><label for="apellidos">Apellidos:</label></td>
+					<td><label for="DNI">DNI</label></td>
+				</tr>
 
-<h2>Sintaxis CSS</h2>
+					<tr>
+						<td><input type="text" name="nombre"></td>
+						<td><input type="text" name="apellidos"></td>
+						<td><input type="text" name="DNI"></td>
+					</tr>
 
-	<p1>Un conjunto de reglas CSS consta de un selector y un bloque de declaración:</p1>
-<img src="imagenes/tarea2(version).png">
-<ul>
-	<li>El selector apunta hacia el elemento HTML que desea dar estilo.
-		<ul>
-			<li>El bloque de declaración contiene uno o más declaraciones separados por punto y coma.</li>
-			<li>Cada declaración incluye un nombre de propiedad CSS y un valor, separados por dos puntos.</li>
-			<li>Una declaración CSS siempre termina con un punto y coma, y ​​los bloques de declaraciones están rodeados por llaves.</li>
-		</ul>
-	</li>
-</ul>
-	
-<p2>En el siguiente ejemplo todos los elementos p estarán centrados y serán de color rojo:</p2>
+				<tr>
+					<td><label for="localidad">Localidad de Nacimiento</label></td>
+					<td><label for="Provincia">Provincia:</label></td>
+					<td><label for="fechan">Fecha de Nacimiento</label></td>
+				</tr>
 
-<h3>Example</h3>
+					<tr>
+						<td><input type="text" name="localidad"></td>
+						<td><select>
+							<option>Galicia</option>
+							<option>Cantabria</option>
+							<option>Bilbao</option>
+						</select></td>
+						<td><input type="date" name="localidad"></td>
+					</tr>
+				<tr>
+					<td colspan="2"><label for="Direccion">Direccion</label></td>
+					<td><label for="Codigopostal">Código Postal:</label></td>
+				</tr>
 
-<img src="imagenes/captura2.png">
-	<hr>
-
-<h4>Los selectores CSS</h4>
-
-	<p>Los selectores CSS se utilizan para "encontrar" (o seleccionar) elemnetos HTML en funcion del nombre (del elemento), ID, clase, atributo, etc.</p>
-
-<hr>
-<h5>El selector de elementos</h5>
-
-	<p>El selector de elementos selecciona elementos basados en el nombre del elemento.</p>
-
-		<p>Puedes seleccionar todos los elementos p en una pagina como esta (en este caso, todos los elementos p estarán centrados y será de color rojo: </p>
-
-<h3>Example</h3>
-
-<img src="imagenes/captura3.png">
-	<hr>
+					<tr>
+						<td colspan="2"><input type="text" name="Direccion" size="45"></td>
+						<td><input type="text" name="Codigopostal"></td>
+					</tr>
+			</table>
+	</fieldset>
+	<fieldset id="fondo2" title="esta zona tiene un fondo color naranja claro y tienes que rellenar la forma de acceso a el ciclo formativo de grado superior">
+		<legend>Forma de Acceso</legend>
+			<table>
+				<ul>
+					<li><input type="radio" name="Directo">Directo
+						<ul>
+							<li><input type="radio" name="bach">Bachillerato Log Modalidad
+								<input type="text" name="">
+							</li>
+							<li><input type="radio" name="Experimental">Experimental</li>
+							<li><input type="radio" name="COU Opcion">COU Opción
+								<input type="text" name="">
+							</li>
+							<li><input type="radio" name="fp2">FP2
+							</li>
+							<li><input type="radio" name="otros">Otros (especifique)
+								<input type="text" name="">
+							</li>
+						</ul>
+					<li><input type="radio" name="">Prueba Libre</li>	
+					</li>
+				</ul>
+			</table>
+	</fieldset>
+	<fieldset id="fondo3" title="esta zona tiene un fondo de color navy y tienes que introducir documentos como el DNI">
+		<legend>Documentos Adjuntados</legend>
+			<tr>
+				<td><input name="DNI" type="checkbox" value="DNI"/> Fotocopia DNI</td>
+				<td><input name="ca" type="checkbox" value="ca"/> Certificado Académico</td>
+			</tr>
+			<tr><br>
+				<td><input name="otros" type="checkbox" value="otros"/> Otros documentos (especifique)
+					<input type="text" name="">
+				</td>
+			</tr>
+	</fieldset>
+</form>
+<input type="submit" name="buscar" value="Enviar Solicitud" />
+</body>
+</html>
