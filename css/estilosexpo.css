@@ -1,0 +1,22 @@
+.centrar{
+	text-align: center;
+}
+
+#first{
+	width: 400px; height: 310px;
+	background-color: cornsilk;
+	border-top: 10px solid royalblue;
+	border-bottom: 10px dashed saddlebrown;
+	margin: 50px;
+	padding: 30px;
+}
+#first img {width: 400px;
+
+}
+
+#letra {
+	font-family: monospace;
+	font-color:black;
+	font-style: solid;
+}
+
