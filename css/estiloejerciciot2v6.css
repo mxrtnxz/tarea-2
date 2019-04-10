@@ -1,0 +1,60 @@
+td,th{
+	border: 1px solid lightpink
+}
+caption {
+	background-color: lightpink;
+	font-size: 18px;
+	color: green;
+}
+tbody tr th:first-child{
+	background-color: lightpink
+	font-size:18px;
+}
+th{
+	background-color: lightpink;
+}
+tbody tr:nth-child(4) td:nth-child(2) {
+	background-color: lightgreen;
+}
+
+tr td:nth-child(7):hover,
+tr th:nth-child(2):hover,
+tr td:last-child:hover 
+{
+	font-size: 120%;
+	background-color: grey;
+	color: green;
+
+}
+thead tr td p::first-letter {
+	font-size: 2em;
+	font-weight: bold;
+}
+
+input:required{
+	border:1px solid lightgreen;
+	padding: 10px;
+}
+
+input[type="button"]{
+	background-color: lightgreen;
+	color: grey;
+}
+
+label::after {
+	color: red;
+	content: "*";
+	vertical-align: super;
+}
+body {
+	font-family: sans-serif;
+}
+th {
+	color: green;
+}
+strong {
+	color: violet;
+}
+.verde{
+	color: green;
+}
