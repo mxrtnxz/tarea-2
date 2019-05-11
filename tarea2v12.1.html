@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>media queries</title>
+    <link rel="stylesheet" type="text/css" href="css/estilost2v12.css" />
+</head>
+<body>
+
+	<div class="container">
+		<header><h1>EJEMPLO PRÁCTICO: DISEÑO ADAPTATIVO (responsive)</h1></header>
+		<nav>
+			<div class="menu-item"><a href="tarea2v12.html">Introduccion</a></div>
+			<div class="menu-item"><a href="tarea2v12.html">Viewport</a></div>
+			<div class="menu-item"><a href="tarea2v12.1.html">Breakpoints</a></div>
+			<div class="menu-item"><a href="tarea2v12.1.html">Media Queries</a></div>
+		</nav>
+	</div>
+
+	<div class="sidebar">
+		<div class="menu-item"><a href="tarea2v12.html">Introduccion</a></div>
+			<div class="menu-item"><a href="tarea2v12.html">Viewport</a></div>
+			<div class="menu-item"><a href="tarea2v12.1.html">Breakpoints</a></div>
+			<div class="menu-item"><a href="tarea2v12.1.html">Media Queries</a></div>
+	</div>
+
+	<section class="flotantes">
+		<div class="flotante">
+			<p><img src="imagenes/Breakpoints.png"></p>
+			<p><strong>Breakpoints</strong>:Hay tres tipos de diseños o layouts a la hora de hacer maquetación web.</p>
+			<ul>
+			<li><p>Fixed: Donde la anchura de la página es fija y es expresada en pixels.</p></li>
+			<li><p>Elastic: Donde la anchura de la página es fija y es expresada en la unidad em (multiplos del tamaño de letra).</p></li>
+			<li><p>Fluid Liquid Relative: Donde la anchura de la página depende del tamaño del Viewport del usuario y se expresa en porcentajes (%)</p></li></ul>
+		</div>
+
+		<div class="flotante" id="tercera">
+			<p><img src="imagenes/water.png"></p>
+			<p>El diseño adaptativo (responsive design) además de adaptación al tamaño implica el cambio en el diseño atendiendo al tamaño de la pantalla del dispositivo. La anchura de la pantalla en la que se produce el cambio es lo que se conoce como breakpoint. La elección de los breakpoints adecuados no es una tarea fácil pero tomaremos como referencia los de Twitter BootStrap</p>
+		</div>
+
+		<div class="flotante">
+			<p><img src="imagenes/twitter.png"></p>
+			<p><576px(pantallas pequeñas) </p>
+			<p>576-768px(móviles apaisados)</p>
+			<p>768-992px(desktop)</p>
+			<p>>1200px(pantallas grandes)</p>
+		</div>
+	</section>
+	<section class="articulos">
+		<article> <p><strong>Media-queries</strong> nos permite adaptar la representacion del contenido a las caracteristicas del dispositivo...</p>
+		<p><strong>Sintaxis de las Media-Queries</strong></p>
+		<p>Las medias queries son expresiones en las que indicamos un tipo de medio y una consulta en relacion a las caracteristicas del dispositivo como alto, ancho e incluso color:</p>
+		<p>Algo similar a lo siguiente:</p>
+		<p id="monospace">@media mediatype [condiciones] (..../* Estilos para estas condiciones*/....,,)
+		</article>
+		
+		<article>
+		<p>Los distintos tipos de valores que puedo tener para <strong>mediatype</strong> son:</p>
+			<ul><li>all</li>
+				<li>screen(el mas usado)</li>
+				<li>tty(terminal)</li>
+				<li>print(para impresoras)</li>
+				<li>tv(para pantallas de television)</li>
+				<li>projected(para proyectar contenidos)</li>
+				<li>braille(para dispositivos para invidentes)</li>
+				<li>etc...</li>
+			</ul>
+		<p>En cuanto a las condiciones que puedo consultar:</p>
+		</article>
+		<article>
+			<ul>
+				<li>width|min-width|max-width</li>
+				<li>height|min-height|max-height</li>
+				<li>orientation</li>
+				<li>aspect-ratio|min-aspect-ratio|max-aspect-ratio</li>
+				<li>color|min-color|max-color</li>
+			</ul>
+			<p>Estas condiciones se pueden combinar y modificar utilizando claúsulas como:</p>
+			<ul>
+				<li>And</li>
+				<li>Not</li>
+				<li>All</li>
+				<li>Only</li>
+			</ul>
+		</article>
+	</section>
+	<footer>Diseño adaptativo hecho por <span>Isabel Martinez Rodriguez </span></footer>
+</body>
