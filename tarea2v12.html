@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>media queries</title>
+    <link rel="stylesheet" type="text/css" href="css/estilost2v12.css" />
+</head>
+<body>
+
+	<div class="container">
+		<header><h1>EJEMPLO PRÁCTICO: DISEÑO ADAPTATIVO</h1></header>
+		<nav>
+			<div class="menu-item"><a href="tarea2v12.html">Introduccion</a></div>
+			<div class="menu-item"><a href="tarea2v12.html">Viewport</a></div>
+			<div class="menu-item"><a href="tarea2v12.1.html">Breakpoints</a></div>
+			<div class="menu-item"><a href="tarea2v12.1.html">Media Queries</a></div>
+		</nav>
+	</div>
+
+	<div class="sidebar">
+		<div class="menu-item"><a href="tarea2v12.html">Introduccion</a></div>
+			<div class="menu-item"><a href="tarea2v12.html">Viewport</a></div>
+			<div class="menu-item"><a href="tarea2v12.1.html">Breakpoints</a></div>
+			<div class="menu-item"><a href="tarea2v12.1.html">Media Queries</a></div>
+	</div>
+
+	<section class="flotantes">
+		<div class="flotante">
+			<p><img src="imagenes/pcs.png"></p>
+			<p>DEFINICIÓN: La definición de wikipedia de diseño responsive:
+			“...una aproximación al diseño web que permite que nuestras página web se
+			vean correctamente en una variedad de dispositivos y de tamaño de
+			pantalla...adaptando el layout al entorno de visualización…</p>
+		</div>
+
+		<div class="flotante" id="tercera">
+			<p><img src="imagenes/pc2.png"></p>
+			<p>Cómo se crea un diseño adaptativo? Se hace utilizando CSS + ETIQUETAS HTML + incluyendo MEDIA QUERIES en el (CSS3)Si las páginas no incluyen diseño responsive, éstas no aparecen en los primeros resultados de google ( demoted), leer el siguiente enlace para más información (SEO: search engine optimization):</p>
+		</div>
+
+		<div class="flotante">
+			<p><img src="imagenes/2pcs.png"></p>
+			<p>¿Se usa actualmente? Sí, se usa en muchas de las páginas actuales en las que al modificar el tamaño de la página no se producen descuadres, scroll horizontal, etc. Por ejemplo: </p>
+		</div>
+	</section>
+	<section class="articulos">
+		<article> <ul><li>
+			Viewport."Área de la pantalla en la que el navegador 				puede renderizar contenido, es decir, el espacio 				disponible para mostrar una página web."
+
+   				 Este concepto es muy fácil de comprender cuando nos referimos a él en ordenadores de sobremesa o portátiles. En estos casos el Viewport coincide con la pantalla del navegador, es decir, las páginas se maquetan usando una anchura fija en píxeles (entre 800px y 1000px):</li></ul></article>
+		<article><ul><li>
+			Sin embargo, si nos referimos a móviles y tablets estaremos hablando de otra cosa diferente.
+
+				Cuando móviles y tablets irrumpieron en el mercado, las páginas que se maquetaban con una anchura fija en píxels, ésta resultaba ser mucho mayor que la anchura de la pantalla de tablets (768px) y móviles(360px).
+
+				Para resolver el problema los fabricantes hicieron que este tipo de dispositivos tuvieran dos Viewports:</li></ul></article>
+		<article><ul><li>
+    			El Layout-viewport que es el viewport que es tenido en cuenta para la aplicación de estilos. Suele ser de aproximadamente 900px.
+   				El Visual-viewport que es el viewport que realmente ve el usuario cuando está navegando.</li></ul></article>
+	</section>
+	<footer>Diseño adaptativo hecho por <span>Isabel Martinez Rodriguez </span></footer>
+</body>
