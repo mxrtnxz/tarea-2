@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="mediaqueries" content="htmlprevio"/>
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>elementos flotantes</title>
+    <link rel="stylesheet" type="text/css" href="css/tarea2v10.css" />
+
+</head>
+<body>
+
+    <div class="container">
+        <header><h1>EJERCICIO PRÁCTICO ELEMENTOS FLOTANTES</h1></header>
+        <nav>
+            <div class="menu-item"><a href="">Inicio</a></div>
+            <div class="menu-item"><a href="">Flow</a></div>
+            <div class="menu-item"><a href="">Overflow</a></div>
+            <div class="menu-item"><a href="">Clear</a></div>
+        </nav>
+    </div>
+
+    <div class="sidebar">
+        <div class="menu-item"><a href="">Inicio</a></div>
+            <div class="menu-item"><a href="">Flow</a></div>
+            <div class="menu-item"><a href="">Overflow</a></div>
+            <div class="menu-item"><a href="">Clear</a></div>
+    </div>
+
+    <section class="flotantes">
+        <div class="flotante">
+            <p><img src="imagenes/overflow.png"></p>
+            <p>La propiedad CSS overflow especifica: si recortar contenido, dibujar barras de desplazamiento o mostrar el contenido excedente en un elemento a nivel de bloque.</p>
+        </div>
+
+        <div class="flotante" id="tercera">
+            <p><img src="imagenes/float.png"></p>
+            <p>La propiedad float especifica si un elemento debe salir del flujo normal y aparecer a la izquierda o a la derecha de su contenedor, donde los elementos de texto y los en linea aparecerán a su alrededor. </p>
+        </div>
+
+        <div class="flotante">
+            <p><img src="imagenes/clear.png"></p>
+            <p>La propiedad del CSS clear especifica si un elemento puede estar al lado de elementos flotantes que lo preceden o si debe ser movido (cleared) debajo de ellos. La propiedad clear aplica a ambos elementos flotantes y no flotantes. </p>
+        </div>
+    </section>
+    <section class="articulos">
+        <article> <ul><li>
+           The columns property is a shorthand property for: column-width-column-count. The column-width part will define the minimum width for each column, while the column-count will define the maximum number of columns. By using this property, the multi-column layout will automatically break down into a single</li></ul></article>
+        <article><ul><li>
+            column at narrow browser widths, without the need of media queries or other rules. La columnspropiedad es una propiedad abreviada para: ancho de columna la columna de recuento. La parte de ancho de columna definirá la anchura minima para cada columna, mientras que la parte de "recuento" columna</li></ul></article>
+        <article><ul><li>
+               definirá el número máximo de columnas. Mediante el uso de esta propiedad, el diseño de varias columnas se romperá automáticamente en una sola columna con anchuras estrechas del navegador, sin necesidad de preguntas de los medios u otras reglas.</li></ul></article>
+    </section>
+    <footer>Diseño adaptativo hecho por <span>Isabel Martinez Rodriguez </span></footer>
+</body>
+</html>
